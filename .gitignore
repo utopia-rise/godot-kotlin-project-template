@@ -1,0 +1,14 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Gradle specific ignores
+.gradle/
+build/
+
+# Godot Kotlin/JVM specific ignores
+.idea/
+jre-arm64/
+jre-amd64/
+graal/
+*.log
+src/main/resources/META-INF/services/

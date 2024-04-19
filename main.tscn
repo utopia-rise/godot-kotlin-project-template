@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc08dhoyyn3kv"]
+
+[ext_resource type="Script" path="res://scripts/godot/PrintText.gdj" id="1_s70mg"]
+[ext_resource type="Script" path="res://scripts/godot/PrintTextJava.gdj" id="2_dbuvn"]
+[ext_resource type="Script" path="res://src/main/kotlin/godot/PrintText.kt" id="3_0c1e5"]
+[ext_resource type="Script" path="res://src/main/java/godot/PrintTextJava.java" id="4_5vg1y"]
+
+[node name="Root" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="Kotlin GDJ" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_s70mg")
+
+[node name="Java GDJ" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_dbuvn")
+
+[node name="Kotlin source" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_0c1e5")
+
+[node name="Java source" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_5vg1y")
