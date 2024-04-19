@@ -1,4 +1,7 @@
 This is a simple Godot 4 project with the additional Gradle parts necessary to build and run scripts written in either Kotlin or Java.
+It will simply display text on screen written by the 2 unique Kotlin and Java source files.
+
+
 
 To use it, simply download the Godot Kotlin/JVM custom engine here: 
 https://github.com/utopia-rise/godot-kotlin-jvm/releases
