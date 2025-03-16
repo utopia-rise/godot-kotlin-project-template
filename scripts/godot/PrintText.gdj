@@ -6,12 +6,14 @@ fqName = godot.PrintText
 relativeSourcePath = src/main/kotlin/godot/PrintText.kt
 baseType = Label
 supertypes = [
-    godot.Label,
-    godot.Control,
-    godot.CanvasItem,
-    godot.Node,
-    godot.Object,
+    godot.api.Label,
+    godot.api.Control,
+    godot.api.CanvasItem,
+    godot.api.Node,
+    godot.api.Object,
     godot.core.KtObject,
+    godot.common.interop.NativeWrapper,
+    godot.common.interop.NativePointer,
     kotlin.Any
 ]
 signals = [

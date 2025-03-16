@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bc08dhoyyn3kv"]
 
-[ext_resource type="Script" path="res://scripts/godot/PrintText.gdj" id="1_s70mg"]
-[ext_resource type="Script" path="res://scripts/godot/PrintTextJava.gdj" id="2_dbuvn"]
-[ext_resource type="Script" path="res://src/main/kotlin/godot/PrintText.kt" id="3_0c1e5"]
-[ext_resource type="Script" path="res://src/main/java/godot/PrintTextJava.java" id="4_5vg1y"]
+[ext_resource type="Script" uid="uid://dpmo60385ts3o" path="res://scripts/godot/PrintText.gdj" id="1_s70mg"]
+[ext_resource type="Script" uid="uid://daghftlocwaa" path="res://scripts/godot/PrintTextJava.gdj" id="2_dbuvn"]
+[ext_resource type="Script" uid="uid://b147jobve7cc7" path="res://src/main/kotlin/godot/PrintText.kt" id="3_0c1e5"]
+[ext_resource type="Script" uid="uid://b3hyil0fubcso" path="res://src/main/java/godot/PrintTextJava.java" id="4_5vg1y"]
 
 [node name="Root" type="GridContainer"]
 anchors_preset = 15
