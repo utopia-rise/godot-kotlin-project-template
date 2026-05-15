@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bc08dhoyyn3kv"]
+[gd_scene load_steps=7 format=3 uid="uid://bc08dhoyyn3kv"]
 
 [ext_resource type="Script" uid="uid://dpmo60385ts3o" path="res://scripts/godot/PrintText.gdj" id="1_s70mg"]
 [ext_resource type="Script" uid="uid://daghftlocwaa" path="res://scripts/godot/PrintTextJava.gdj" id="2_dbuvn"]
 [ext_resource type="Script" uid="uid://b147jobve7cc7" path="res://src/main/kotlin/godot/PrintText.kt" id="3_0c1e5"]
 [ext_resource type="Script" uid="uid://b3hyil0fubcso" path="res://src/main/java/godot/PrintTextJava.java" id="4_5vg1y"]
+[ext_resource type="Script" path="res://scripts/godot/PrintTextScala.gdj" id="5_48w34"]
+[ext_resource type="Script" path="res://src/main/scala/godot/PrintTextScala.scala" id="6_t1gdn"]
 
 [node name="Root" type="GridContainer"]
 anchors_preset = 15
@@ -11,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-columns = 2
+columns = 3
 
 [node name="Kotlin GDJ" type="Label" parent="."]
 layout_mode = 2
@@ -29,6 +31,14 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("2_dbuvn")
 
+[node name="Scala GDJ" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_48w34")
+
 [node name="Kotlin source" type="Label" parent="."]
 layout_mode = 2
 size_flags_horizontal = 6
@@ -44,3 +54,11 @@ size_flags_vertical = 6
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("4_5vg1y")
+
+[node name="Scala source" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("6_t1gdn")
