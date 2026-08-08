@@ -1,13 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bc08dhoyyn3kv"]
+[gd_scene format=3 uid="uid://bc08dhoyyn3kv"]
 
-[ext_resource type="Script" uid="uid://dpmo60385ts3o" path="res://scripts/godot/PrintText.gdj" id="1_s70mg"]
-[ext_resource type="Script" uid="uid://daghftlocwaa" path="res://scripts/godot/PrintTextJava.gdj" id="2_dbuvn"]
-[ext_resource type="Script" uid="uid://b147jobve7cc7" path="res://src/main/kotlin/godot/PrintText.kt" id="3_0c1e5"]
-[ext_resource type="Script" uid="uid://b3hyil0fubcso" path="res://src/main/java/godot/PrintTextJava.java" id="4_5vg1y"]
-[ext_resource type="Script" path="res://scripts/godot/PrintTextScala.gdj" id="5_48w34"]
-[ext_resource type="Script" path="res://src/main/scala/godot/PrintTextScala.scala" id="6_t1gdn"]
+[ext_resource type="Script" uid="uid://bs0qu1buwpg68" path="res://src/main/kotlin/godot/PrintText.kt" id="1_kotlin"]
+[ext_resource type="Script" uid="uid://gh8agko26paq" path="res://src/main/java/godot/PrintTextJava.java" id="2_java"]
+[ext_resource type="Script" uid="uid://b6lv1275s6dfk" path="res://src/main/scala/godot/PrintTextScala.scala" id="3_scala"]
 
-[node name="Root" type="GridContainer"]
+[node name="Root" type="GridContainer" unique_id=1770782846]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -15,50 +12,26 @@ grow_horizontal = 2
 grow_vertical = 2
 columns = 3
 
-[node name="Kotlin GDJ" type="Label" parent="."]
+[node name="Kotlin source" type="Label" parent="." unique_id=433086458]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("1_s70mg")
+script = ExtResource("1_kotlin")
 
-[node name="Java GDJ" type="Label" parent="."]
+[node name="Java source" type="Label" parent="." unique_id=1321380305]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("2_dbuvn")
+script = ExtResource("2_java")
 
-[node name="Scala GDJ" type="Label" parent="."]
+[node name="Scala source" type="Label" parent="." unique_id=1324600859]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("5_48w34")
-
-[node name="Kotlin source" type="Label" parent="."]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("3_0c1e5")
-
-[node name="Java source" type="Label" parent="."]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("4_5vg1y")
-
-[node name="Scala source" type="Label" parent="."]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("6_t1gdn")
+script = ExtResource("3_scala")

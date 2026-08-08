@@ -1,8 +1,8 @@
-import godot.entrygenerator.settings.RegistrationFileLayoutMode
+import godot.annotation.processor.classgraph.AnnotationProcessingMode
 import godot.gradle.GodotLanguage
 
 plugins {
-    id("com.utopia-rise.godot-kotlin-jvm") version "0.16.1-4.6.3"
+    id("com.utopia-rise.godot-kotlin-jvm") version "0.17.0-4.7.2"
 }
 
 repositories {
@@ -17,6 +17,8 @@ godot {
     // JVM source languages that participate in the Godot Kotlin/JVM build pipeline.
     languages.set(setOf(GodotLanguage.KOTLIN, GodotLanguage.JAVA, GodotLanguage.SCALA))
 
+    annotationProcessingMode.set(AnnotationProcessingMode.Inferred)
+
     // Override the toolchain or language versions only when you need something newer than the defaults.
     // javaVersion.set(17)
     // kotlinVersion.set("2.2.0")
@@ -24,12 +26,6 @@ godot {
 
     // Only change this if the Gradle project is not the Godot project root containing project.godot.
     // godotProjectDirectory.set(file("."))
-
-    // Directory where .gdj registration files are generated and synchronized.
-    registrationFilesDirectory.set(projectDir.resolve("scripts"))
-
-    // HIERARCHICAL mirrors package folders under registrationFilesDirectory.
-    registrationFilesLayoutMode.set(RegistrationFileLayoutMode.HIERARCHICAL)
 
     // Keep the default short registered class names instead of using fully qualified names.
     // registrationNameMode.set(RegisteredNameMode.SIMPLE_NAME)
